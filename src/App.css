@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: "GangwonEduPowerExtraBoldA";
+  src: url("./assets/fonts/gangwon\ Bold.ttf");
+}
+
+@font-face {
+  font-family: "BAggroB";
+  src: url("./assets/fonts/SB_B.woff");
+}
+
+@font-face {
+  font-family: "Jua-Regular";
+  src: url("./assets/fonts/Jua-Regular.ttf");
+}
+
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
