@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { createSearchParams, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { QuestionData } from "../assets/data/questionData";
 
@@ -22,16 +22,29 @@ const Question = () => {
     if (QuestionData.length !== questionNo + 1) {
       setQuestionNo(questionNo + 1);
     } else {
-      navigate("/result");
+      //mbti 도출
+      const mbti = newScore.reduce(
+        (acc, curr) =>
+          acc +
+          (curr.score >= 2 ? curr.id.substring(0, 1) : curr.id.substring(1, 2)),
+        ""
+      );
+      //결과 페이지 이동
+      navigate({
+        pathname: "/result",
+        search: `?${createSearchParams({
+          mbti: mbti,
+        })}`,
+      });
     }
   };
 
-  console.log(questionNo);
   return (
     <div>
       <Wrapper>
         <div className="container mx-auto flex items-center justify-center text-center px-3 py-24 ">
           <div className="lg:w-[390px] md:w-[390px] bg-white rounded-lg  w-full relative py-16">
+            <div className="text-right">{questionNo}/12</div>
             <div className="w-full mb-12 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
               <div
                 className="bg-blue-600 h-2.5 rounded-full"
@@ -44,9 +57,9 @@ const Question = () => {
               <div>{QuestionData[questionNo].title}</div>
             </div>
             <img
-              class=" mb-10 object-cover object-center rounded"
+              className=" mb-10 object-cover object-center rounded"
               alt="hero"
-              src="https://dummyimage.com/720x600"
+              src={QuestionData[questionNo].img}
             />
             <div>
               <button

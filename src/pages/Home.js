@@ -38,8 +38,13 @@ const Home = () => {
                 onClick={handleClick}
               >
                 <h3>테스트 시작하기</h3>
-                <div>지금까지 ~명이 테스트를 진행했어요</div>
+                {/* <div>지금까지 ~명이 테스트를 진행했어요</div> */}
               </button>
+              <div className="text-center w-full">
+                <p className="mb-8 leading-relaxed GangwonEduPowerExtraBoldA">
+                  로고 자리
+                </p>
+              </div>
             </div>
           </div>
         </Wrapper>

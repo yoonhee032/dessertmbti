@@ -2,6 +2,7 @@ export const QuestionData = [
   {
     id: 1,
     title: "드디어 내 생일! \n 약속을 잡을 때 나는?",
+    img: "img/image1.png",
     answera: "생일이니까 다같이!\n  여러명이서 모인다.",
     answerb: "소중한 사람들끼리 소소하게!\n  1~2명씩 소수로 모인다.",
     type: "EI",
@@ -9,6 +10,7 @@ export const QuestionData = [
   {
     id: 2,
     title: "친구를 위한 케이크! \n 어떻게 주문하지?",
+    img: "img/image2.png",
     answera: "시트는 초코, 레터링은 사진찍어서! \n 최대한 자세하게 말한다.",
     answerb: "전체적으로 귀엽게요! \n 분위기만 말하고 전문가에게 맡긴다.",
     type: "SN",
@@ -16,6 +18,7 @@ export const QuestionData = [
   {
     id: 3,
     title: "애인이 내 생일을 까먹었다.\n 그럴 때 나는?",
+    img: "img/image3.png",
     answera: "이유를 물어본다.\n 납득 가능하면 ok",
     answerb: "왜지...? \n 전화를 꺼둔다",
     type: "TF",
@@ -23,6 +26,7 @@ export const QuestionData = [
   {
     id: 4,
     title: "중요한 기념일이 일주일 남았을 때\n 나는?",
+    img: "img/image4.png",
     answera:
       "우선 장소부터 예약하고 다음은 케이크 예약,,\n 차근차근 하나씩 예약을 시작한다",
     answerb: "3일 정도면 충분하지,\n 더 알아본 뒤 한번에 예약한다",
@@ -31,6 +35,7 @@ export const QuestionData = [
   {
     id: 5,
     title: "생각치 못한 보너스가 생겼을 때 나는?",
+    img: "img/image5.png",
     answera: "장바구니 털기!\n 쇼핑몰 장바구니에 담았던 것들을 하나씩 산다.",
     answerb: "오늘은 flex!\n 백화점을 싹 돌면서 사고싶은걸 산다.",
     type: "JP",
