@@ -111,6 +111,7 @@ const Result = () => {
                       <button>
                         <img
                           src={ShareLogo}
+                          alt="공유 이미지"
                           onClick={() =>
                             handleCopyClipBoard(
                               `${process.env.REACT_APP_HOME_URL}`
