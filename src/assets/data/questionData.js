@@ -72,7 +72,7 @@ export const QuestionData = [
     id: 10,
     title: "밥먹으러 가다가 괜찮은 음식점을 발견했을 때\n 나는?",
     answera: "목적지가 우선이다.\n 원래 가려고 했던 음식점으로 간다",
-    answerb: "내 촉을 믿는다.\n . 새로 발견한 음식점으로 간다.",
+    answerb: "내 촉을 믿는다.\n 새로 발견한 음식점으로 간다.",
     type: "SN",
   },
   {
@@ -84,7 +84,7 @@ export const QuestionData = [
   },
   {
     id: 12,
-    title: "다음주 기념일에 제주도 놀러갈까?\n 이때 나는?",
+    title: "다음주 기념일에 제주도 놀러갈까?",
     answera: "갑자기??\n 우선 비행기표 최저가부터 알아본다.",
     answerb: "좋아! 가서 바다보고 맛있는거 먹으면 딱이지\n 느긋하게 생각한다.",
     type: "JP",
