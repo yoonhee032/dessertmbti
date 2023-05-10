@@ -22,7 +22,7 @@ const Result = () => {
 
   useEffect(() => {
     setLoading(false);
-  });
+  },[]);
 
   const handleClick = (move) => {
     if (move === "more") {
