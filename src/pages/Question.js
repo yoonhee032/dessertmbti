@@ -39,17 +39,19 @@ const Question = () => {
     }
   };
 
+  console.log(QuestionData[questionNo].img);
+
   return (
     <div>
       <Wrapper>
         <div className="container mx-auto flex items-center justify-center text-center px-3 py-24 ">
           <div className="lg:w-[390px] md:w-[390px] bg-white rounded-lg  w-full relative py-16">
-            <div className="text-right">{questionNo}/12</div>
+            <div className="text-right">{questionNo + 1}/12</div>
             <div className="w-full mb-12 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
               <div
-                className="bg-blue-600 h-2.5 rounded-full"
+                className="bg-[#FFAABE] h-2.5 rounded-full"
                 style={{
-                  width: `${(questionNo / QuestionData.length) * 100}%`,
+                  width: `${((questionNo + 1) / QuestionData.length) * 100}%`,
                 }}
               ></div>
             </div>
@@ -64,14 +66,14 @@ const Question = () => {
             <div>
               <button
                 type="button"
-                className="w-[100%] min-h-[140px] text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900"
+                className="w-[100%] min-h-[140px] text-[#E8405C] hover:text-white border border-gray-300 hover:bg-[#E8405C]  font-medium rounded-lg text-m px-5 py-2.5 text-center mr-2 mb-2"
                 onClick={() => handleClickBtn(1, QuestionData[questionNo].type)}
               >
                 <Font>{QuestionData[questionNo].answera}</Font>
               </button>
               <button
                 type="button"
-                className="w-[100%] min-h-[140px] text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900"
+                className="w-[100%] min-h-[140px] text-[#E8405C] hover:text-white border border-gray-300 hover:bg-[#E8405C]  font-medium rounded-lg text-m px-5 py-2.5 text-center mr-2 mb-2"
                 onClick={() => handleClickBtn(0, QuestionData[questionNo].type)}
               >
                 <Font>{QuestionData[questionNo].answerb}</Font>
