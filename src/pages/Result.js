@@ -25,6 +25,15 @@ const Result = () => {
     }
   };
 
+  const handleCopyClipBoard = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      alert("결과 공유 링크가 복사되었습니다!");
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <>
       <section className="text-gray-600 body-font">
@@ -84,7 +93,12 @@ const Result = () => {
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                   <KakaoShareBtn data={resultData} />
                   <button>
-                    <img src={ShareLogo}></img>
+                    <img
+                      src={ShareLogo}
+                      onClick={() =>
+                        handleCopyClipBoard(`${process.env.REACT_APP_HOME_URL}`)
+                      }
+                    ></img>
                   </button>
                 </span>
               </div>
