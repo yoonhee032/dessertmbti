@@ -17,7 +17,7 @@ const Home = () => {
       <section className="text-gray-600 body-font">
         <Wrapper>
           {/* <Header> 디저트 테스트 </Header> */}
-          <div className="container mx-auto flex items-center justify-center text-center px-3 py-24 ">
+          <div className="container mx-auto flex items-center justify-center text-center px-3 py-12 ">
             <div className="lg:w-[390px] md:w-[390px] bg-white rounded-lg flex flex-col w-full relative py-16">
               <h1 className="title-font sm:text-4xl text-4xl mb-4 font-bold text-gray-900">
                 디저트 테스트

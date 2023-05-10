@@ -44,7 +44,7 @@ const Question = () => {
   return (
     <div>
       <Wrapper>
-        <div className="container mx-auto flex items-center justify-center text-center px-3 py-24 ">
+        <div className="container mx-auto flex items-center justify-center text-center px-3 py-12 ">
           <div className="lg:w-[390px] md:w-[390px] bg-white rounded-lg  w-full relative py-16">
             <div className="text-right">{questionNo + 1}/12</div>
             <div className="w-full mb-12 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
