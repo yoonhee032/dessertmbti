@@ -5,7 +5,7 @@ const KakaoShareBtn = ({ data }) => {
   const url = process.env.REACT_APP_HOME_URL;
   const resultUrl = window.location.href;
 
-  console.log("데이터", data);
+  // console.log("데이터", data);
 
   const kakaoButton = () => {
     if (window.Kakao) {

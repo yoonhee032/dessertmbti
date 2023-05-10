@@ -39,7 +39,7 @@ const Question = () => {
     }
   };
 
-  console.log(QuestionData[questionNo].img);
+  // console.log(QuestionData[questionNo].img);
 
   return (
     <div>
