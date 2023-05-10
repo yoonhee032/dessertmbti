@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { createSearchParams, useNavigate } from "react-router-dom";
+import { KakaoLoadOne } from "./Home";
 import styled from "styled-components";
 import { QuestionData } from "../assets/data/questionData";
+
+
 
 const Question = () => {
   const [questionNo, setQuestionNo] = useState(0);
@@ -13,6 +16,11 @@ const Question = () => {
   ]);
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    KakaoLoadOne();
+  }, []);
+
 
   const handleClickBtn = (no, type) => {
     const newScore = totalScore.map((s) =>
@@ -81,6 +89,7 @@ const Question = () => {
             </div>
           </div>
         </div>
+        <div className="adfitOne" />
       </Wrapper>
     </div>
   );

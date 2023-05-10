@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { ResultData } from "../assets/data/resultData";
 
 import Loading from "./Loading";
+import { KakaoLoadOne } from "./Home";
 
 import styled from "styled-components";
 import KakaoShareBtn from "../component/KakaoShareBtn";
@@ -22,6 +23,10 @@ const Result = () => {
 
   useEffect(() => {
     setLoading(false);
+  }, []);
+
+  useEffect(() => {
+    KakaoLoadOne();
   }, []);
 
   const handleClick = (move) => {
@@ -141,6 +146,7 @@ const Result = () => {
               )}
             </div>
           </div>
+          <div className="adfitOne" />
         </Wrapper>
       </section>
     </>

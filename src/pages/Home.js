@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import styled from "styled-components";
@@ -7,6 +7,10 @@ import MainImage from "../assets/image/dessert3.gif";
 
 const Home = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    KakaoLoadOne();
+  }, []);
 
   const handleClick = () => {
     navigate("/question");
@@ -65,15 +69,34 @@ const Home = () => {
                   <img src={SweetLogo}></img>
                 </div>
               </div> */}
+
               <div className="mx-auto flex px-5  items-center justify-center flex-col">
                 <img src={SweetLogo} alt="로고 이미지"></img>
               </div>
             </div>
           </div>
+          <div className="adfitOne" />
         </Wrapper>
       </section>
     </>
   );
+};
+
+export const KakaoLoadOne = () => {
+  let ins = document.createElement("ins");
+  let scr = document.createElement("script");
+
+  ins.className = "kakao_ad_area";
+  ins.style = "display:none; width:100%;";
+  scr.async = "true";
+  scr.type = "text/javascript";
+  scr.src = "//t1.daumcdn.net/kas/static/ba.min.js";
+  ins.setAttribute("data-ad-width", "300");
+  ins.setAttribute("data-ad-height", "100");
+  ins.setAttribute("data-ad-unit", "DAN-7DNvA5twsPjFm6jX");
+
+  document.querySelector(".adfitOne").appendChild(ins);
+  document.querySelector(".adfitOne").appendChild(scr);
 };
 
 export default Home;
