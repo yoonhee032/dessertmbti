@@ -17,10 +17,12 @@ const Result = () => {
     setResultData(result);
   }, [mbti]);
 
-  console.log(resultData);
-
-  const handleClick = () => {
-    navigate("/");
+  const handleClick = (move) => {
+    if (move === "more") {
+      window.open("https://sweetrip.swygbro.com/");
+    } else {
+      navigate("/");
+    }
   };
 
   return (
@@ -37,25 +39,30 @@ const Result = () => {
               <h1 className="title-font sm:text-4xl text-4xl mb-4 font-bold text-gray-900">
                 {resultData && resultData.name}
               </h1>
+
               <img
                 className=" mb-10 object-cover object-center rounded"
                 alt="hero"
-                src="https://dummyimage.com/720x600"
+                src={resultData && resultData.image}
               />
+
               {/* <Lottie loop animationData={heartJson} play /> */}
               <div className="text-left flex flex-wrap -mx-2">
                 <div className="p-2 w-full">
                   {resultData &&
                     resultData.desc.map((item) => (
                       <>
-                        <div className="bg-gray-100 rounded flex p-4  items-center">
+                        <div
+                          key={item.id}
+                          className="bg-gray-100 rounded flex p-4  items-center"
+                        >
                           <svg
                             fill="none"
                             stroke="currentColor"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth="3"
-                            className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                            className="text-indigo-300 w-6 h-6 flex-shrink-0 mr-4"
                             viewBox="0 0 24 24"
                           >
                             <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
@@ -82,14 +89,18 @@ const Result = () => {
                 </span>
               </div>
               <button
-                className="text-white bg-indigo-500 border-0 py-3 px-6 mb-5 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-                onClick={handleClick}
+                className="text-white bg-[#7EB2FF] border-0 py-3 px-6 mb-5 focus:outline-none hover:bg-[#E8405C] rounded text-lg"
+                onClick={() => {
+                  handleClick("more");
+                }}
               >
-                <h3>더 많은 디저트 보러가기</h3>
+                <h3>더 많은 디저트 보러가기 👉</h3>
               </button>
               <button
-                className="text-white bg-indigo-500 border-0 py-3 px-6 mb-5 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-                onClick={handleClick}
+                className="text-white bg-[#FFAABE] border-0 py-3 px-6 mb-5 focus:outline-none hover:bg-[#E8405C] rounded text-lg"
+                onClick={() => {
+                  handleClick("home");
+                }}
               >
                 <h3>테스트 다시하기</h3>
               </button>
