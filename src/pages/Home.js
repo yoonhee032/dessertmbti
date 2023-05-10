@@ -71,7 +71,13 @@ const Home = () => {
               </div> */}
 
               <div className="mx-auto flex px-5  items-center justify-center flex-col">
-                <img src={SweetLogo} alt="로고 이미지"></img>
+                <a
+                  href="https://sweetrip.swygbro.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={SweetLogo} alt="로고 이미지"></img>
+                </a>
               </div>
             </div>
           </div>
