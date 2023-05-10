@@ -10,7 +10,7 @@ export const ResultData = [
       "하지만 표현이 서툴러 다소 차가워 보일 수도 있어요",
       "나한테 지적하려면 정확한 근거가 필요해요",
     ],
-    image: "",
+    image: "img/result/result_img5.png",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const ResultData = [
       "하지만 가끔 감정기복이 날뛸 때가 있어요",
       "잔걱정이 많아서 잔소리를 할때도 있어요",
     ],
-    image: "",
+    image: "img/result/result_img6.png",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const ResultData = [
       "고집은 있지만, 고집 세보이는거 싫어요",
       "가끔 일을 미룰 수 있을때까지 미뤄요, 하지만 한번 마음 먹으면 제대로 해요",
     ],
-    image: "",
+    image: "img/result/result_img2.png",
   },
   {
     id: 4,
@@ -49,11 +49,11 @@ export const ResultData = [
       "잡담은 싫어하지만 관심분야에서는 말이 많아요",
       "남들한테는 관심이 별로 없어요",
     ],
-    image: "",
+    image: "img/result/result_img16.png",
   },
   {
     id: 5,
-    name: "생크림 케이크",
+    name: "컵케이크",
     best: "ISFJ",
     title: "편하고 부드러운",
     desc: [
@@ -62,7 +62,7 @@ export const ResultData = [
       "남의 얘기는 잘 들어주지만 내 얘기는 잘 안해요",
       "잘난척하는거 진짜 싫어해요",
     ],
-    image: "",
+    image: "img/result/result_img15.png",
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ export const ResultData = [
       "보통 조용하지만 필요하다면 사교적이에요",
       "마음에 없는 소리하는거 싫어해요 ",
     ],
-    image: "",
+    image: "img/result/result_img7.png",
   },
   {
     id: 7,
@@ -88,7 +88,7 @@ export const ResultData = [
       "내가 생각하는 걸 완벽히 공감해줄 사람은 없다고 생각해요",
       "신중하지만 한번 실망하면 빠르게 정리해요",
     ],
-    image: "",
+    image: "img/result/result_img13.png",
   },
   {
     id: 8,
@@ -101,7 +101,7 @@ export const ResultData = [
       "관종같아도 은근 내향적이고 독립적이에요",
       "질리는게 빠르고 권태기가 잘 와요",
     ],
-    image: "",
+    image: "img/result/result_img14.png",
   },
   {
     id: 9,
@@ -114,7 +114,7 @@ export const ResultData = [
       "사람에게 정붙이는게 오래걸려요",
       "감정이 서툰게 아니라 신경을 끄는편이에요",
     ],
-    image: "",
+    image: "img/result/result_img12.png",
   },
   {
     id: 10,
@@ -127,7 +127,7 @@ export const ResultData = [
       "갈등이 심해질수록 냉정해져요",
       "해야하는것보다는 당장 내가 하고싶은것을 먼저해요",
     ],
-    image: "",
+    image: "img/result/result_img9.png",
   },
   {
     id: 11,
@@ -140,7 +140,7 @@ export const ResultData = [
       "도전이 없는일에는 흥미가 없어요",
       "토론이나 논쟁하는거 좋아해요",
     ],
-    image: "",
+    image: "img/result/result_img10.png",
   },
   {
     id: 12,
@@ -153,7 +153,7 @@ export const ResultData = [
       "시간약속 안지키는거 정말 싫어해요",
       "누구시키는것보다 내가 하는게 마음편해요",
     ],
-    image: "",
+    image: "img/result/result_img8.png",
   },
   {
     id: 13,
@@ -166,7 +166,7 @@ export const ResultData = [
       "가끔은 우주최강 오지라퍼에요",
       "싸우는건 싫어하지만 싸워서 지는게 더 싫어요",
     ],
-    image: "",
+    image: "img/result/result_img11.png",
   },
   {
     id: 14,
@@ -179,7 +179,7 @@ export const ResultData = [
       "가끔 엉뚱하다는 소리를 들어요",
       "해보지도 않고 못한다고 하는거 제일 싫어해요",
     ],
-    image: "",
+    image: "img/result/result_img1.png",
   },
   {
     id: 15,
@@ -192,7 +192,7 @@ export const ResultData = [
       "갈등은 싫어해요. 평화로운게 좋아요",
       "하지만 고집도 세서 내가 마음먹은건 꼭 해야해요",
     ],
-    image: "",
+    image: "img/result/result_img4.png",
   },
   {
     id: 16,
@@ -205,6 +205,6 @@ export const ResultData = [
       "하지만 한번 싫은건 끝까지 싫어해요",
       "애매모호한 정보에는 하나하나 구체적으로 질문해요",
     ],
-    image: "",
+    image: "img/result/result_img3.png",
   },
 ];
