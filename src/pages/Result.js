@@ -22,7 +22,7 @@ const Result = () => {
 
   useEffect(() => {
     setLoading(false);
-  },[]);
+  }, []);
 
   const handleClick = (move) => {
     if (move === "more") {
@@ -99,7 +99,10 @@ const Result = () => {
                     </div>
                   </div>
                   <div className="px-3 p-5 mx-auto">
-                    <a className="flex title-font font-medium items-center">
+                    <a
+                      href="#!"
+                      className="flex title-font font-medium items-center"
+                    >
                       <span className="ml-3 mb-2 text-xl">결과 공유하기</span>
                     </a>
 
