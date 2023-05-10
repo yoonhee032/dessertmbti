@@ -3,15 +3,17 @@ import styled from "styled-components";
 import KakaoLogo from "../assets/kakaotalk_logo_icon_147272.svg";
 
 const KakaoShareBtn = ({ data }) => {
-  const url = "https://localhost:3000/";
+  const url = process.env.REACT_APP_HOME_URL;
   const resultUrl = window.location.href;
+
+  console.log("데이터", data);
 
   const kakaoButton = () => {
     if (window.Kakao) {
       const kakao = window.Kakao;
 
       if (!kakao.isInitialized()) {
-        kakao.init("497f677a2ce09434d79c85c5abab471a");
+        kakao.init(process.env.REACT_APP_KAKAO_INIT_NUM);
       }
 
       kakao.Share.sendDefault({
@@ -19,8 +21,7 @@ const KakaoShareBtn = ({ data }) => {
         content: {
           title: "디저트 판별기 결과",
           description: `나와 가장 잘맞는 디저트는 ${data.name}입니다.`,
-          imageUrl:
-            "https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg",
+          imageUrl: url + data.image,
           link: {
             mobileWebUrl: resultUrl,
             webUrl: resultUrl,
