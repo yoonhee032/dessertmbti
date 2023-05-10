@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import styled from "styled-components";
+import React from "react";
 import KakaoLogo from "../assets/kakaotalk_logo_icon_147272.svg";
 
 const KakaoShareBtn = ({ data }) => {
@@ -49,7 +48,7 @@ const KakaoShareBtn = ({ data }) => {
           kakaoButton();
         }}
       >
-        <img src={KakaoLogo}></img>
+        <img src={KakaoLogo} alt="kakao 로고"></img>
       </button>
     </>
   );

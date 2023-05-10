@@ -95,10 +95,5 @@ const Wrapper = styled.div`
 const Font = styled.pre`
   font-family: "BAggroB";
 `;
-const Title = styled.div`
-  height: 100vh;
-  width: 100%;
-  font-family: "BAggroB";
-`;
 
 export default Question;

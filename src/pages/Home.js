@@ -1,11 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import KakaoShareBtn from "../component/KakaoShareBtn";
-
 import styled from "styled-components";
-import Lottie from "react-lottie-player";
-import heartJson from "../assets/heart.json";
 import SweetLogo from "../assets/main_logo.svg";
 import MainImage from "../assets/image/dessert3.gif";
 
@@ -70,7 +66,7 @@ const Home = () => {
                 </div>
               </div> */}
               <div className="mx-auto flex px-5  items-center justify-center flex-col">
-                <img src={SweetLogo}></img>
+                <img src={SweetLogo} alt="로고 이미지"></img>
               </div>
             </div>
           </div>
@@ -86,32 +82,4 @@ const Wrapper = styled.div`
   height: 100vh;
   width: 100%;
   font-family: "BAggroB";
-`;
-const Header = styled.div`
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Contents = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Title = styled.div`
-  font-size: 30px;
-  margin-top: 40px;
-`;
-
-const LottieWrap = styled.div`
-  width: 350px;
-  margin-top: 10px;
-`;
-
-const Desc = styled.div`
-  font-size: 20px;
-  margin-top: 10px;
 `;

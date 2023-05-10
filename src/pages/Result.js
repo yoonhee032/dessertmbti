@@ -98,6 +98,7 @@ const Result = () => {
                       onClick={() =>
                         handleCopyClipBoard(`${process.env.REACT_APP_HOME_URL}`)
                       }
+                      alt="공유 이미지"
                     ></img>
                   </button>
                 </span>
