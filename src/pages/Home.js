@@ -42,7 +42,7 @@ const Home = () => {
               <div className="text-center w-full">
                 <p className="mb-8 leading-relaxed GangwonEduPowerExtraBoldA">
                   MBTI를 기반으로
-                  <br /> 나와 어울리는 디저트 찾기!
+                  <br /> 나와 닮은 디저트 캐릭터 찾기!
                 </p>
               </div>
               <button
