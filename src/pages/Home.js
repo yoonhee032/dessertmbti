@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import ReactGA from "react-ga";
 
 import styled from "styled-components";
 import SweetLogo from "../assets/main_logo.svg";
@@ -13,6 +14,10 @@ const Home = () => {
   }, []);
 
   const handleClick = () => {
+    ReactGA.event({
+      category: "Event",
+      action: "Press start button",
+    });
     navigate("/question");
   };
 
