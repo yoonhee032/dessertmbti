@@ -11,6 +11,24 @@
 ✅ 유형 검사<br/>
 ✅ SNS 공유하기 (카카오톡)  <br/><br/> 
 
+<img src=https://github.com/yoonhee032/dessertmbti/assets/105180536/6185c239-dd28-4517-8252-54a7f6147197  width="240" height="460"/>
+<img src=https://github.com/yoonhee032/dessertmbti/assets/105180536/bb5f765e-d341-4633-9986-bfc33db23edd width="240" height="460"/>
+<br/>
+
+　　 검사페이지(12문항)　　　　　　　결과페이지(16개 유형)
+
+<br/>
+<br/>
+
+<img src=https://github.com/yoonhee032/dessertmbti/assets/105180536/7e2a84c7-1fa6-4fca-ba55-80ce6f5d18bf width="240" height="240"/>
+<img src=https://github.com/yoonhee032/dessertmbti/assets/105180536/b730fef7-3b24-427d-b51c-8d592d4f22df width="240" height="300"/>
+<br/>
+<br/>
+　　　　　 URL 공유　　　　　　　　　　　 결과창 공유
+     
+<br/>
+<br/>
+ 
 ## 📌배포 링크
 - https://dessertbti.netlify.app/ <br/><br/>
 
