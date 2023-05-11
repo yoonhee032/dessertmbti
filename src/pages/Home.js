@@ -46,7 +46,7 @@ const Home = () => {
                 </p>
               </div>
               <button
-                className="text-white bg-[#FFAABE] border-0 py-3 px-6 mb-5 focus:outline-none hover:bg-[#E8405C] rounded text-2xl"
+                className="text-white bg-[#E8405C] border-0 py-3 px-6 mb-5 focus:outline-none hover:bg-[#FFAABE] rounded text-2xl"
                 onClick={handleClick}
               >
                 <h3>테스트 시작하기</h3>

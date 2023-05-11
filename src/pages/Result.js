@@ -14,12 +14,23 @@ const Result = () => {
   const [searchParams] = useSearchParams();
   const mbti = searchParams.get("mbti");
   const [resultData, setResultData] = useState();
+  const [fairData, setFairData] = useState();
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const result = ResultData.find((s) => s.best === mbti);
     setResultData(result);
+
+    const goodFair = ResultData.find((s) => s.best === result.good);
+    const badFair = ResultData.find((s) => s.best === result.bad);
+    setFairData({
+      good: goodFair,
+      bad: badFair,
+    });
   }, [mbti]);
+
+  console.log("FairData", fairData);
 
   useEffect(() => {
     setLoading(false);
@@ -101,6 +112,46 @@ const Result = () => {
                             {/* </li> */}
                           </>
                         ))}
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex flex-wrap -mx-2">
+                      <div class="px-2 w-1/2">
+                        <div class="flex flex-wrap w-full border-2 border-gray-200 rounded-lg">
+                          <div class="text-center relative z-10 w-full">
+                            <h2 class="text-l text-gray-900 font-medium title-font mt-2 mb-2">
+                              환상의 케미
+                            </h2>
+                            <img
+                              className="mb-3 object-cover  rounded"
+                              alt="hero"
+                              src={fairData && fairData.good.image}
+                            />
+                            <p class="text-sm text-gray-500 font-light mb-1">
+                              {fairData.good.title}
+                            </p>
+                            <h1>{fairData.good.name}</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="px-2 w-1/2">
+                        <div class="flex flex-wrap w-full">
+                          <div class="text-center relative z-10 w-full border-2 border-gray-200 rounded-lg">
+                            <h2 class="text-l text-gray-900 font-medium title-font mt-2 mb-2">
+                              환장의 케미
+                            </h2>
+                            <img
+                              className="mb-3 object-cover  rounded"
+                              alt="hero"
+                              src={fairData && fairData.bad.image}
+                            />
+                            <p class="text-sm text-gray-500 font-light mb-1">
+                              {fairData.bad.title}
+                            </p>
+                            <h1>{fairData.bad.name}</h1>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div className="px-3 p-5 mx-auto">
