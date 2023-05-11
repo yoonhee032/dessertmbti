@@ -1,5 +1,5 @@
 # 🥰 나와 닮은 디저트 캐릭터 찾기🥰
-**나와 어울리는 디저트 캐릭터를 mbti를 기반으로 추천하는 테스트 입니다.** <br/> <br/> 
+<br/> **나와 어울리는 디저트 캐릭터를 mbti를 기반으로 추천하는 테스트 입니다.** <br/> <br/> 
 <img src=https://github.com/yoonhee032/dessertmbti/assets/105180536/a4e99f42-c430-4c1e-9c74-912a5b7bb354 width="800" height="460"/>
 
 ## 📌개요
