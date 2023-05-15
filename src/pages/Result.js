@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import ReactGA from "react-ga";
 import { ResultData } from "../assets/data/resultData";
 
 import Loading from "./Loading";
@@ -178,15 +179,19 @@ const Result = () => {
                     </span>
                   </div>
                   <button
-                    className="text-white bg-[#7EB2FF] border-0 py-3 px-6 mb-5 focus:outline-none hover:bg-[#E8405C] rounded text-lg"
+                    className="text-white bg-[#4f96ff] border-0 py-3 px-6 mb-5 focus:outline-none hover:bg-[#7eb2ff] rounded text-lg"
                     onClick={() => {
                       handleClick("more");
+                      ReactGA.event({
+                        category: "Event",
+                        action: "Press more button",
+                      });
                     }}
                   >
                     <h3>더 많은 디저트 보러가기 👉</h3>
                   </button>
                   <button
-                    className="text-white bg-[#FFAABE] border-0 py-3 px-6 mb-5 focus:outline-none hover:bg-[#E8405C] rounded text-lg"
+                    className="text-white bg-[#E8405C] border-0 py-3 px-6 mb-5 focus:outline-none hover:bg-[#FFAABE] rounded text-lg"
                     onClick={() => {
                       handleClick("home");
                     }}
