@@ -7,6 +7,7 @@ import Loading from "./Loading";
 import { KakaoLoadOne } from "./Home";
 
 import styled from "styled-components";
+import SweetLogo from "../assets/main_logo.svg";
 import KakaoShareBtn from "../component/KakaoShareBtn";
 import ShareLogo from "../assets/share.svg";
 
@@ -63,8 +64,8 @@ const Result = () => {
       <section className="text-gray-600 body-font">
         <Wrapper>
           {/* <Header> 디저트 테스트 </Header> */}
-          <div className="container mx-auto flex items-center justify-center text-center px-3 py-12 ">
-            <div className="lg:w-[390px] md:w-[390px] bg-white rounded-lg flex flex-col w-full relative py-16">
+          <div className="container mx-auto flex items-center justify-center text-center px-3 py-5 ">
+            <div className="lg:w-[390px] md:w-[390px] bg-white rounded-lg flex flex-col w-full relative py-5">
               {loading ? (
                 <Loading />
               ) : (
@@ -202,8 +203,18 @@ const Result = () => {
               )}
             </div>
           </div>
-          <div className="adfitOne" />
         </Wrapper>
+        <Footer>
+          <div className="px-5 py-5 pb-16 text-center gap-5 h-auto">
+            <a className="flex font-mono font-medium text-center justify-center text-gray-900">
+              <img src={SweetLogo} alt="로고 이미지"></img>
+            </a>
+            <p className="text-[#999] mt-0 text-base pl-5 max-[640px]:text-sm">
+              Copyright © 2023 SWEETRIP All Rights Reserved.
+            </p>
+          </div>
+        </Footer>
+        <div className="adfitOne" />
       </section>
     </>
   );
@@ -212,7 +223,12 @@ const Result = () => {
 export default Result;
 
 const Wrapper = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
   font-family: "BAggroB";
+`;
+
+const Footer = styled.div`
+  height: 100%;
+  width: 100%;
 `;
