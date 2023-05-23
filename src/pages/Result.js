@@ -215,7 +215,10 @@ const Result = () => {
               client="ca-pub-1919598055512436"
               slot="9210283486"
             />
-            <a className="flex font-mono font-medium text-center justify-center text-gray-900">
+            <a
+              href="#!"
+              className="flex font-mono font-medium text-center justify-center text-gray-900"
+            >
               <img src={SweetLogo} alt="로고 이미지"></img>
             </a>
             <p className="text-[#999] mt-0 text-base pl-5 max-[640px]:text-sm">
