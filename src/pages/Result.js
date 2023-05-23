@@ -5,6 +5,7 @@ import { ResultData } from "../assets/data/resultData";
 
 import Loading from "./Loading";
 import { KakaoLoadOne } from "./Home";
+import GoogleAdvertise from "../component/GoogleAdvertise";
 
 import styled from "styled-components";
 import SweetLogo from "../assets/main_logo.svg";
@@ -32,7 +33,7 @@ const Result = () => {
     });
   }, [mbti]);
 
-  console.log("FairData", fairData);
+  // console.log("FairData", fairData);
 
   useEffect(() => {
     setLoading(false);
@@ -117,11 +118,11 @@ const Result = () => {
                     </div>
                   </div>
                   <div>
-                    <div class="flex flex-wrap -mx-2">
-                      <div class="px-2 w-1/2">
-                        <div class="flex flex-wrap w-full border-2 border-gray-200 rounded-lg">
-                          <div class="text-center relative z-10 w-full">
-                            <h2 class="text-l text-gray-900 font-medium title-font mt-2 mb-2">
+                    <div className="flex flex-wrap -mx-2">
+                      <div className="px-2 w-1/2">
+                        <div className="flex flex-wrap w-full border-2 border-gray-200 rounded-lg">
+                          <div className="text-center relative z-10 w-full">
+                            <h2 className="text-l text-gray-900 font-medium title-font mt-2 mb-2">
                               환상의 케미
                             </h2>
                             <img
@@ -129,17 +130,17 @@ const Result = () => {
                               alt="hero"
                               src={fairData && fairData.good.image}
                             />
-                            <p class="text-sm text-gray-500 font-light mb-1">
+                            <p className="text-sm text-gray-500 font-light mb-1">
                               {fairData.good.title}
                             </p>
                             <h1>{fairData.good.name}</h1>
                           </div>
                         </div>
                       </div>
-                      <div class="px-2 w-1/2">
-                        <div class="flex flex-wrap w-full">
-                          <div class="text-center relative z-10 w-full border-2 border-gray-200 rounded-lg">
-                            <h2 class="text-l text-gray-900 font-medium title-font mt-2 mb-2">
+                      <div className="px-2 w-1/2">
+                        <div className="flex flex-wrap w-full">
+                          <div className="text-center relative z-10 w-full border-2 border-gray-200 rounded-lg">
+                            <h2 className="text-l text-gray-900 font-medium title-font mt-2 mb-2">
                               환장의 케미
                             </h2>
                             <img
@@ -147,7 +148,7 @@ const Result = () => {
                               alt="hero"
                               src={fairData && fairData.bad.image}
                             />
-                            <p class="text-sm text-gray-500 font-light mb-1">
+                            <p className="text-sm text-gray-500 font-light mb-1">
                               {fairData.bad.title}
                             </p>
                             <h1>{fairData.bad.name}</h1>
@@ -204,8 +205,16 @@ const Result = () => {
             </div>
           </div>
         </Wrapper>
+
         <Footer>
           <div className="px-5 py-5 pb-16 text-center gap-5 h-auto">
+            <GoogleAdvertise
+              display="inline-block"
+              width="300px"
+              height="250px"
+              client="ca-pub-1919598055512436"
+              slot="9210283486"
+            />
             <a className="flex font-mono font-medium text-center justify-center text-gray-900">
               <img src={SweetLogo} alt="로고 이미지"></img>
             </a>

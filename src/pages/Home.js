@@ -5,6 +5,7 @@ import ReactGA from "react-ga";
 import styled from "styled-components";
 import SweetLogo from "../assets/main_logo.svg";
 import MainImage from "../assets/image/dessert3.gif";
+import GoogleAdvertise from "../component/GoogleAdvertise";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -86,6 +87,13 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <GoogleAdvertise
+            display="inline-block"
+            width="320px"
+            height="50px"
+            client="ca-pub-1919598055512436"
+            slot="9210283486"
+          />
           <div className="adfitOne" />
         </Wrapper>
       </section>

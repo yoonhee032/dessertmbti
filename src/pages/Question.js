@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import { createSearchParams, useNavigate } from "react-router-dom";
 import { KakaoLoadOne } from "./Home";
 import styled from "styled-components";
+import GoogleAdvertise from "../component/GoogleAdvertise";
 import { QuestionData } from "../assets/data/questionData";
-
-
 
 const Question = () => {
   const [questionNo, setQuestionNo] = useState(0);
@@ -20,7 +19,6 @@ const Question = () => {
   useEffect(() => {
     KakaoLoadOne();
   }, []);
-
 
   const handleClickBtn = (no, type) => {
     const newScore = totalScore.map((s) =>
@@ -89,6 +87,13 @@ const Question = () => {
             </div>
           </div>
         </div>
+        <GoogleAdvertise
+          display="inline-block"
+          width="320px"
+          height="50px"
+          client="ca-pub-1919598055512436"
+          slot="9210283486"
+        />
         <div className="adfitOne" />
       </Wrapper>
     </div>
